@@ -1,0 +1,166 @@
+img{
+    height: 200px;
+    width: 400px;
+    border: rgb(243, 235, 235) 10px solid;
+}
+body{
+    font-size: medium;
+    color: linen;
+   background-repeat: no-repeat;background-size: cover;            
+}
+.zoom {
+padding: 50px;
+
+transition: transform .2s; /* Animation */
+
+margin: 0 auto;
+}
+
+.zoom:hover {
+transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+.figure{
+border-color: chocolate;
+
+box-shadow: 7px 5px 5px rgb(77, 78, 82);
+height: 97%;
+width:98%;
+}
+.centered {
+position: absolute;
+top: 25%;
+left: 50%;
+transform: translate(-50%, -50%);}
+.responsive {
+width: 100%;
+height: auto;
+}
+.top-left {
+position: absolute;
+top: 8px;
+left: 16px;
+}
+
+body{
+    background-image: url("images/forestview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;            
+}
+.figure{
+border-color: chocolate;
+
+box-shadow: 7px 5px 5px rgb(77, 78, 82);
+height: 97%;
+width:98%;
+}
+.centered {
+position: absolute;
+top: 25%;
+left: 50%;
+transform: translate(-50%, -50%);}
+.responsive {
+width: 100%;
+height: auto;
+}
+.top-left {
+position: absolute;
+top: 8px;
+left: 16px;
+}
+.jumbotron{
+background-image: url("images/veggies.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+color:white;
+}
+a:hover img {
+transform: scale(1.1);
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.figure{
+    border-color: chocolate;
+    
+    box-shadow: 7px 5px 5px rgb(77, 78, 82);
+    height: 97%;
+    width:98%;
+    }
+    .centered {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);}
+  .responsive {
+  width: 100%;
+  height: auto;
+}
+
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+body{
+    background-image: url("images/forestview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: large;
+    color: blanchedalmond;
+    
+}
+img{
+    height: 200px;
+    width: 400px;
+    border: rgb(243, 235, 235) 10px solid;
+}
+.zoom {
+padding: 50px;
+
+transition: transform .2s; /* Animation */
+
+margin: 0 auto;
+}
+
+.zoom:hover {
+transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.figure{
+border-color: chocolate;
+
+box-shadow: 7px 5px 5px rgb(77, 78, 82);
+height: 97%;
+width:98%;
+}
+.centered {
+position: absolute;
+top: 25%;
+left: 50%;
+transform: translate(-50%, -50%);}
+.responsive {
+width: 100%;
+height: auto;
+}
+.top-left {
+position: absolute;
+top: 8px;
+left: 16px;
+}
+
+nav{
+    background: transparent;
+    color: azure;
+    padding: 0px;
+}
+.nav-link{
+    background: transparent;
+    color: azure;
+}
+a:hover{
+    text-shadow: 0 0 20px white;
+    color: white;
+}

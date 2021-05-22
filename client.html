@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>CLIENT</title>
+    <link href="clstyle.css" type="text/css" rel="stylesheet"/>
+
+    
+</head>
+<body>
+    
+        <nav class="navbar navbar-expand-lg bg-success">
+            <a class="navbar-brand" href="#">FARM-ON</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon" s;></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i>Cart</a>
+                </li>
+                
+              </ul>
+              
+            </div>
+          </nav>
+       
+          <div class = "container">
+              
+                <div class="card-deck">
+                    <div class="card" id ="tomato">
+                      <img class="card-img-top" src="images/tomato.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">TOMATO</h5>
+                        <p class="card-text">  PRICE (per kg) :  <div id="price"></div></p>
+                         
+                        <p class="card-text"> ADDRESS: <div id ="address"></div></p>
+                        <p class="card-text"> FARMER: <div id ="farmer"></div>  </p>
+                        <div class = "row" id="qty">
+                            <div class = "col">
+
+                            </div>
+                            <div class = "col-2">
+                                <button type="button" class="btn btn-danger">-</button> 
+                            </div>
+                            <div class = "col-4">
+                                <input class="form-control text-center" type="text" value="0">
+                            </div>
+                            <div class = "col-2">
+                                <button type="button" class="btn btn-success">+</button>
+                            </div>
+                            <div class = "col">
+
+                            </div>
+                            
+                            
+                        </div>
+                        <br><button type="button" class="btn btn-primary btn-lg btn-block">Add to Cart   <i class="fas fa-shopping-cart"></i></button>
+                      </div>
+                    </div>
+                    <div class="card" id ="cabbage">
+                      <img class="card-img-top" src="images/cabbage.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">CABBAGE</h5>
+                        <p class="card-text">  PRICE (per kg) :  <div id="price"></div></p>
+                         
+                        <p class="card-text"> ADDRESS: <div id ="address"></div></p>
+                        <p class="card-text"> FARMER: <div id ="farmer"></div>  </p>
+                        <div class = "row" id="qty">
+                            <div class = "col">
+
+                            </div>
+                            <div class = "col-2">
+                                <button type="button" class="btn btn-danger">-</button> 
+                            </div>
+                            <div class = "col-4">
+                                <input class="form-control text-center" type="text" value="0">
+                            </div>
+                            <div class = "col-2">
+                                <button type="button" class="btn btn-success">+</button>
+                            </div>
+                            <div class = "col">
+
+                            </div>
+                            
+                            
+                        </div>
+                        <br><button type="button" class="btn btn-primary btn-lg btn-block">Add to Cart   <i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                    </div>
+                    <div class="card" id ="brinjal">
+                      <img class="card-img-top" src="images/brinjal.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">BRINJAL</h5>
+                        <p class="card-text">  PRICE (per kg) :  <div id="price"></div></p>
+                         
+                        <p class="card-text"> ADDRESS: <div id ="address"></div></p>
+                        <p class="card-text"> FARMER: <div id ="farmer"></div>  </p>
+                        <div class = "row" id="qty">
+                            <div class = "col">
+
+                            </div>
+                            <div class = "col-2">
+                                <button type="button" class="btn btn-danger">-</button> 
+                            </div>
+                            <div class = "col-4">
+                                <input class="form-control text-center" type="text" value="0">
+                            </div>
+                            <div class = "col-2">
+                                <button type="button" class="btn btn-success">+</button>
+                            </div>
+                            <div class = "col">
+
+                            </div>
+                            
+                            
+                        </div>
+                        <br><button type="button" class="btn btn-primary btn-lg btn-block">Add to Cart   <i class="fas fa-shopping-cart"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-deck">
+                    <div class="card" id ="cauliflower">
+                      <img class="card-img-top" src="images/cauliflower.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">CAULIFLOWER</h5>
+                        <p class="card-text">  PRICE (per kg) :  <div id="price"></div></p>
+                         
+                        <p class="card-text"> ADDRESS: <div id ="address"></div></p>
+                        <p class="card-text"> FARMER: <div id ="farmer"></div>  </p>
+                        <div class = "row" id="qty">
+                            <div class = "col">
+
+                            </div>
+                            <div class = "col-2">
+                                <button type="button" class="btn btn-danger">-</button> 
+                            </div>
+                            <div class = "col-4">
+                                <input class="form-control text-center" type="text" value="0">
+                            </div>
+                            <div class = "col-2">
+                                <button type="button" class="btn btn-success">+</button>
+                            </div>
+                            <div class = "col">
+
+                            </div>
+                            
+                            
+                        </div>
+                        <br><button type="button" class="btn btn-primary btn-lg btn-block">Add to Cart   <i class="fas fa-shopping-cart"></i></button>
+                      </div>
+                    </div>
+                    <div class="card" id ="cucumber">
+                      <img class="card-img-top" src="images/cucumber.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">CUCUMBER</h5>
+                        <p class="card-text">  PRICE (per kg) :  <div id="price"></div></p>
+                         
+                        <p class="card-text"> ADDRESS: <div id ="address"></div></p>
+                        <p class="card-text"> FARMER: <div id ="farmer"></div>  </p>
+                        <div class = "row" id="qty">
+                            <div class = "col">
+
+                            </div>
+                            <div class = "col-2">
+                                <button type="button" class="btn btn-danger">-</button> 
+                            </div>
+                            <div class = "col-4">
+                                <input class="form-control text-center" type="text" value="0">
+                            </div>
+                            <div class = "col-2">
+                                <button type="button" class="btn btn-success">+</button>
+                            </div>
+                            <div class = "col">
+
+                            </div>
+                            
+                            
+                        </div>
+                        <br><button type="button" class="btn btn-primary btn-lg btn-block">Add to Cart   <i class="fas fa-shopping-cart"></i></button>
+                      </div>
+                    </div>
+                    <div class="card" id ="carrot">
+                      <img class="card-img-top" src="images/carrot.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">CARROT</h5>
+                        <p class="card-text">  PRICE (per kg) :  <div id="price"></div></p>
+                         
+                        <p class="card-text"> ADDRESS: <div id ="address"></div></p>
+                        <p class="card-text"> FARMER: <div id ="farmer"></div>  </p>
+                        <div class = "row" id="qty">
+                            <div class = "col">
+
+                            </div>
+                            <div class = "col-2">
+                                <button type="button" class="btn btn-danger">-</button> 
+                            </div>
+                            <div class = "col-4">
+                                <input class="form-control text-center" type="text" value="0">
+                            </div>
+                            <div class = "col-2">
+                                <button type="button" class="btn btn-success">+</button>
+                            </div>
+                            <div class = "col">
+
+                            </div>
+                            
+                            
+                        </div>
+                        <br><button type="button" class="btn btn-primary btn-lg btn-block">Add to Cart   <i class="fas fa-shopping-cart"></i></button>
+                      </div>
+                    </div>
+                  </div>
+             
+
+          
+              <div class="card-deck">
+                <div class="card" id = "rice">
+                  <img class="card-img-top" src="images/rice.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">RICE</h5>
+                    <p class="card-text">  PRICE (per kg) :  <div id="price"></div></p>
+                         
+                        <p class="card-text"> ADDRESS: <div id ="address"></div></p>
+                        <p class="card-text"> FARMER: <div id ="farmer"></div>  </p>
+                    <div class = "row" id="qty">
+                        <div class = "col">
+
+                        </div>
+                        <div class = "col-2">
+                            <button type="button" class="btn btn-danger">-</button> 
+                        </div>
+                        <div class = "col-4">
+                            <input class="form-control text-center" type="text" value="0">
+                        </div>
+                        <div class = "col-2">
+                            <button type="button" class="btn btn-success">+</button>
+                        </div>
+                        <div class = "col">
+
+                        </div>
+                        
+                        
+                    </div>
+                    <br><button type="button" class="btn btn-primary btn-lg btn-block">Add to Cart   <i class="fas fa-shopping-cart"></i></button>
+                  </div>
+                </div>
+                <div class="card" id = "redgram">
+                  <img class="card-img-top" src="images/redgram.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">RED GRAM</h5>
+                    <p class="card-text">  PRICE (per kg) :  <div id="price"></div></p>
+                         
+                        <p class="card-text"> ADDRESS: <div id ="address"></div></p>
+                        <p class="card-text"> FARMER: <div id ="farmer"></div>  </p>
+                    <div class = "row" id="qty">
+                        <div class = "col">
+
+                        </div>
+                        <div class = "col-2">
+                            <button type="button" class="btn btn-danger">-</button> 
+                        </div>
+                        <div class = "col-4">
+                            <input class="form-control text-center" type="text" value="0">
+                        </div>
+                        <div class = "col-2">
+                            <button type="button" class="btn btn-success">+</button>
+                        </div>
+                        <div class = "col">
+
+                        </div>
+                        
+                        
+                    </div>
+                    <br><button type="button" class="btn btn-primary btn-lg btn-block">Add to Cart   <i class="fas fa-shopping-cart"></i></button>
+                  </div>
+                </div>
+                <div class="card" id = "jowar">
+                  <img class="card-img-top" src="images/jowar.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">JOWAR</h5>
+                    <p class="card-text">  PRICE (per kg) :  <div id="price"></div></p>
+                         
+                        <p class="card-text"> ADDRESS: <div id ="address"></div></p>
+                        <p class="card-text"> FARMER: <div id ="farmer"></div>  </p>
+                    <div class = "row" id="qty">
+                        <div class = "col">
+
+                        </div>
+                        <div class = "col-2">
+                            <button type="button" class="btn btn-danger">-</button> 
+                        </div>
+                        <div class = "col-4">
+                            <input class="form-control text-center" type="text" value="0">
+                        </div>
+                        <div class = "col-2">
+                            <button type="button" class="btn btn-success">+</button>
+                        </div>
+                        <div class = "col">
+
+                        </div>
+                        
+                        
+                    </div>
+                    <br><button type="button" class="btn btn-primary btn-lg btn-block">Add to Cart   <i class="fas fa-shopping-cart"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-deck">
+                <div class="card" id ="corn">
+                  <img class="card-img-top" src="images/corn.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">CORN</h5>
+                    <p class="card-text">  PRICE (per kg) :  <div id="price"></div></p>
+                         
+                        <p class="card-text"> ADDRESS: <div id ="address"></div></p>
+                        <p class="card-text"> FARMER: <div id ="farmer"></div>  </p>
+                    <div class = "row" id="qty">
+                        <div class = "col">
+
+                        </div>
+                        <div class = "col-2">
+                            <button type="button" class="btn btn-danger">-</button> 
+                        </div>
+                        <div class = "col-4">
+                            <input class="form-control text-center" type="text" value="0">
+                        </div>
+                        <div class = "col-2">
+                            <button type="button" class="btn btn-success">+</button>
+                        </div>
+                        <div class = "col">
+
+                        </div>
+                        
+                        
+                    </div>
+                    <br><button type="button" class="btn btn-primary btn-lg btn-block">Add to Cart   <i class="fas fa-shopping-cart"></i></button>
+                  </div>
+                </div>
+                <div class="card" id ="moong">
+                  <img class="card-img-top" src="images/moong.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">GREEN GRAM (MOONG)</h5>
+                    <p class="card-text">  PRICE (per kg) :  <div id="price"></div></p>
+                         
+                        <p class="card-text"> ADDRESS: <div id ="address"></div></p>
+                        <p class="card-text"> FARMER: <div id ="farmer"></div>  </p>
+                    <div class = "row" id="qty">
+                        <div class = "col">
+
+                        </div>
+                        <div class = "col-2">
+                            <button type="button" class="btn btn-danger">-</button> 
+                        </div>
+                        <div class = "col-4">
+                            <input class="form-control text-center" type="text" value="0">
+                        </div>
+                        <div class = "col-2">
+                            <button type="button" class="btn btn-success">+</button>
+                        </div>
+                        <div class = "col">
+
+                        </div>
+                        
+                        
+                    </div>
+                    <br><button type="button" class="btn btn-primary btn-lg btn-block">Add to Cart   <i class="fas fa-shopping-cart"></i></button>
+                  </div>
+                </div>
+                <div class="card" id ="seseme">
+                  <img class="card-img-top" src="images/seseme.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">SESEME</h5>
+                    <p class="card-text">  PRICE (per kg) :  <div id="price"></div></p>
+                         
+                        <p class="card-text"> ADDRESS: <div id ="address"></div></p>
+                        <p class="card-text"> FARMER: <div id ="farmer"></div>  </p>
+                    <div class = "row" id="qty">
+                        <div class = "col">
+
+                        </div>
+                        <div class = "col-2">
+                            <button type="button" class="btn btn-danger">-</button> 
+                        </div>
+                        <div class = "col-4">
+                            <input class="form-control text-center" type="text" value="0">
+                        </div>
+                        <div class = "col-2">
+                            <button type="button" class="btn btn-success">+</button>
+                        </div>
+                        <div class = "col">
+
+                        </div>
+                        
+                        
+                    </div>
+                    <br><button type="button" class="btn btn-primary btn-lg btn-block">Add to Cart   <i class="fas fa-shopping-cart"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-deck">
+                <div class="card" id="apple">
+                  <img class="card-img-top" src="images/apple.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">APPLE</h5>
+                    <p class="card-text">  PRICE (per kg) :  <div id="price"></div></p>
+                         
+                        <p class="card-text"> ADDRESS: <div id ="address"></div></p>
+                        <p class="card-text"> FARMER: <div id ="farmer"></div>  </p>
+                    <div class = "row" id="qty">
+                        <div class = "col">
+
+                        </div>
+                        <div class = "col-2">
+                            <button type="button" class="btn btn-danger">-</button> 
+                        </div>
+                        <div class = "col-4">
+                            <input class="form-control text-center" type="text" value="0">
+                        </div>
+                        <div class = "col-2">
+                            <button type="button" class="btn btn-success">+</button>
+                        </div>
+                        <div class = "col">
+
+                        </div>
+                        
+                        
+                    </div>
+                    <br><button type="button" class="btn btn-primary btn-lg btn-block">Add to Cart   <i class="fas fa-shopping-cart"></i></button>
+                  </div>
+                </div>
+                <div class="card" id="banana">
+                  <img class="card-img-top" src="images/banana.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">BANANA</h5>
+                    <p class="card-text">  PRICE (per kg) :  <div id="price"></div></p>
+                         
+                        <p class="card-text"> ADDRESS: <div id ="address"></div></p>
+                        <p class="card-text"> FARMER: <div id ="farmer"></div>  </p>
+                    <div class = "row" id="qty">
+                        <div class = "col">
+
+                        </div>
+                        <div class = "col-2">
+                            <button type="button" class="btn btn-danger">-</button> 
+                        </div>
+                        <div class = "col-4">
+                            <input class="form-control text-center" type="text" value="0">
+                        </div>
+                        <div class = "col-2">
+                            <button type="button" class="btn btn-success">+</button>
+                        </div>
+                        <div class = "col">
+
+                        </div>
+                        
+                        
+                    </div>
+                    <br><button type="button" class="btn btn-primary btn-lg btn-block">Add to Cart   <i class="fas fa-shopping-cart"></i></button>
+                  </div>
+                </div>
+                <div class="card" id ="lemon">
+                  <img class="card-img-top" src="images/lemon.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">LEMON</h5>
+                    <p class="card-text">  PRICE (per kg) :  <div id="price"></div></p>
+                         
+                        <p class="card-text"> ADDRESS: <div id ="address"></div></p>
+                        <p class="card-text"> FARMER: <div id ="farmer"></div>  </p>
+                    <div class = "row" id="qty">
+                        <div class = "col">
+
+                        </div>
+                        <div class = "col-2">
+                            <button type="button" class="btn btn-danger">-</button> 
+                        </div>
+                        <div class = "col-4">
+                            <input class="form-control text-center" type="text" value="0">
+                        </div>
+                        <div class = "col-2">
+                            <button type="button" class="btn btn-success">+</button>
+                        </div>
+                        <div class = "col">
+
+                        </div>
+                        
+                        
+                    </div>
+                    <br><button type="button" class="btn btn-primary btn-lg btn-block">Add to Cart   <i class="fas fa-shopping-cart"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-deck">
+                <div class="card" id ="mango">
+                  <img class="card-img-top" src="images/mango.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MANGO</h5>
+                    <p class="card-text">  PRICE (per kg) :  <div id="price"></div></p>
+                         
+                        <p class="card-text"> ADDRESS: <div id ="address"></div></p>
+                        <p class="card-text"> FARMER: <div id ="farmer"></div>  </p>
+                    <div class = "row" id="qty">
+                        <div class = "col">
+
+                        </div>
+                        <div class = "col-2">
+                            <button type="button" class="btn btn-danger">-</button> 
+                        </div>
+                        <div class = "col-4">
+                            <input class="form-control text-center" type="text" value="0">
+                        </div>
+                        <div class = "col-2">
+                            <button type="button" class="btn btn-success">+</button>
+                        </div>
+                        <div class = "col">
+
+                        </div>
+                        
+                        
+                    </div>
+                    <br><button type="button" class="btn btn-primary btn-lg btn-block">Add to Cart   <i class="fas fa-shopping-cart"></i></button>
+                  </div>
+                </div>
+                <div class="card" id="grapes">
+                  <img class="card-img-top" src="images/grapes.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">GRAPES</h5>
+                    <p class="card-text">  PRICE (per kg) :  <div id="price"></div></p>
+                         
+                        <p class="card-text"> ADDRESS: <div id ="address"></div></p>
+                        <p class="card-text"> FARMER: <div id ="farmer"></div>  </p>
+                    <div class = "row" id="qty">
+                        <div class = "col">
+
+                        </div>
+                        <div class = "col-2">
+                            <button type="button" class="btn btn-danger">-</button> 
+                        </div>
+                        <div class = "col-4">
+                            <input class="form-control text-center" type="text" value="0">
+                        </div>
+                        <div class = "col-2">
+                            <button type="button" class="btn btn-success">+</button>
+                        </div>
+                        <div class = "col">
+
+                        </div>
+                        
+                        
+                    </div>
+                    <br><button type="button" class="btn btn-primary btn-lg btn-block">Add to Cart   <i class="fas fa-shopping-cart"></i></button>
+                  </div>
+                </div>
+                <div class="card" id ="guava">
+                  <img class="card-img-top" src="images/guava.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">GUAVA</h5>
+                    <p class="card-text">  PRICE (per kg) :  <div id="price"></div></p>
+                         
+                        <p class="card-text"> ADDRESS: <div id ="address"></div></p>
+                        <p class="card-text"> FARMER: <div id ="farmer"></div>  </p>
+                    <div class = "row" id="qty">
+                        <div class = "col">
+
+                        </div>
+                        <div class = "col-2">
+                            <button type="button" class="btn btn-danger">-</button> 
+                        </div>
+                        <div class = "col-4">
+                            <input class="form-control text-center" type="text" value="0">
+                        </div>
+                        <div class = "col-2">
+                            <button type="button" class="btn btn-success">+</button>
+                        </div>
+                        <div class = "col">
+
+                        </div>
+                        
+                        
+                    </div>
+                    <br><button type="button" class="btn btn-primary btn-lg btn-block">Add to Cart   <i class="fas fa-shopping-cart"></i></button>
+                  </div>
+                </div>
+              </div>
+              
+          </div>
+          <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+          <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
