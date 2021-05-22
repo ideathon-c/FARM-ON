@@ -34,7 +34,7 @@ height: auto;
       position: absolute;
       top: 0;
       left: 0;
-      background-image: url("images/veggies.jpg");
+      background-image: url("veggies.jpg");
       background-repeat: no-repeat;
       background-position: center;
     background-size: cover;
